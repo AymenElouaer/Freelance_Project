@@ -1,0 +1,131 @@
+.scroll-list {
+    width: 1096px;
+    height: 339px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.arrow {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-top: 129px;
+    padding-bottom: 183px;
+}
+
+.left-arrow {
+    left: 0;
+    padding-left: 44px;
+}
+
+.right-arrow {
+    right: 0;
+    padding-right: 82px;
+    margin-left: 19px;
+}
+
+.image-container {
+    display: flex;
+
+}
+
+.image {
+    height: 285px;
+    flex-shrink: 0;
+    margin-left: 2px;
+
+}
+
+.first-image {
+    width: 401px;
+    padding-left: 92px;
+    background: rgba(0, 0, 0, 0.68) !important;
+
+}
+
+.first-image-text {
+    position: absolute;
+    top: 208px;
+    left: 117px;
+    right: 143px;
+    bottom: 49px;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.second-image-text {
+    position: absolute;
+    top: 230px;
+    /* Adjust the top margin from the first text */
+    left: 117px;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3px;
+}
+
+.second-image {
+    width: 269px;
+    background: url('../../assets/Rectangle\ 150.png') 50% / cover no-repeat;
+}
+
+.third-image {
+    width: 309px;
+    background: url('../../assets/Rectangle\ 151.png') 50% / cover no-repeat;
+}
+
+.autoscroll-bar {
+    background: #FFF;
+    width: 1096px;
+    height: 54px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #000;
+    display: flex;
+    align-items: center;
+}
+
+.scrolling-text {
+    width: 143px;
+    height: 28px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+    margin-right: 9px;
+}
+
+.scrolling-text-container {
+    display: flex;
+    animation: scrollText 20s linear infinite;
+    /* Adjust animation duration as needed */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

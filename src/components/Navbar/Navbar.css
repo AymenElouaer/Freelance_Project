@@ -1,0 +1,40 @@
+.navbar {
+    width: 1096px;
+    height: 54px;
+    background: #FF4D20;
+    top: 211px;
+    left: 221px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 13px 35px;
+    color: #fff;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 1px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding: 41px;
+}
+
+.logo {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+}
